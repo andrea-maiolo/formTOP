@@ -14,9 +14,9 @@ form.addEventListener('submit', (e) => {
 
 function checkInputs(e,c,z,p,pc) {
     if(e==true && c==true && z==true && p==true && pc==true ){
-		alert("high five you submited succesfully")
+		alert("High five you submited succesfully!")
 	}else{
-		alert("wtf")
+		alert("Some fields are incomplete or wrong")
 	}
 }
 

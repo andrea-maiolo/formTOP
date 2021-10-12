@@ -11,7 +11,7 @@
 	<form id="form" class="form">
 		<div class="form-control">
 			<label for="username">Email</label>
-			<input type="email" required placeholder="a@florin-pop.com" pattern=".+?[@]bigcorp[.]eu$" id="email" />
+			<input type="email" required placeholder="andy@bigcorp.eu" pattern=".+?[@]bigcorp[.]eu$" id="email" />
 			<i class="fas fa-check-circle"></i>
 			<i class="fas fa-exclamation-circle"></i>
 			<small>Error message</small>
@@ -19,7 +19,7 @@
     <div class="form-control">
 			<label for="country">Country</label>
 			<select id="country" required>
-        <option selected disabled>choose</option>
+        <option selected disabled value="">choose</option>
         <option value="Afghanistan">Afghanistan</option>
         <option value="Albania">Albania</option>
         <option value="Algeria">Algeria</option>
@@ -274,8 +274,10 @@
 		<div class="form-control">
 			<label for="username">Password</label>
 			<input type="password" placeholder="Password" required minlength=8 maxlength=16 pattern="^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,16}$" id="password"/>
-      <input type="checkbox" onclick="Toggle()">
-      <b>Show Password</b>
+      <span class="showP">
+        <input class="toogle" type="checkbox" onclick="Toggle()">
+        <b class="showT">Show Password</b>
+      </span>
 			<i class="fas fa-check-circle"></i>
 			<i class="fas fa-exclamation-circle"></i>
 			<small>Error message</small>
@@ -283,8 +285,10 @@
 		<div class="form-control">
 			<label for="username">Password check</label>
 			<input type="password" placeholder="Password two" required id="password2"/>
-      <input type="checkbox" onclick="Toggle2()">
-      <b>Show Password</b>
+      <span class="showP">
+        <input type="checkbox" class="toogle" onclick="Toggle2()">
+        <b class="showT">Show Password</b>
+      </span>
 			<i class="fas fa-check-circle"></i>
 			<i class="fas fa-exclamation-circle"></i>
 			<small>Error message</small>

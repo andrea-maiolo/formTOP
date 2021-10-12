@@ -123,3 +123,24 @@ body {
 	padding: 10px;
 	width: 100%;
 }
+
+.showP{
+	display:flex;
+	flex-direction: row-reverse;
+	margin:0.5rem;
+}
+
+.showT{
+	font-size: small;
+	font-family: inherit;
+	font-weight: 100;
+}
+
+/* Portrait */
+@media screen and (orientation:portrait) {
+    .container{
+		width:80vw;
+		height: 80vh;
+		font-size: 30px;
+	}
+}
